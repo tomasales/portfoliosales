@@ -666,3 +666,122 @@ p {
             height: 100%;
         }
     }
+
+    /* Animaciones */
+
+    .waving-hand {
+        animation: waving-hand 2.5s infinite;
+        transform-origin: 70% 70%;
+    }
+
+    @keyframes waving-hand {
+        0% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(14deg);
+        }
+        20% {
+            transform: rotate(-8deg);
+        }
+        30% {
+            transform: rotate(14deg);
+        }
+        40% {
+            transform: rotate(-4.0deg);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+        60% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .sidetoside {
+        animation: sidetoside 2.5s infinite;
+    }
+
+    @keyframes sidetoside {
+        0% {
+            transform: translateX(0px);
+        }        
+        50% {
+            transform: translateX(-5px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    .sidetosidetwo {
+        animation: sidetosidetwo 2.5s infinite;
+    }
+
+    @keyframes sidetosidetwo {
+        0% {
+            transform: translateX(0px);
+        }        
+        50% {
+            transform: translateX(5px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    .upDown {
+        animation: upDown 2s;
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translateY(0px);
+        }        
+        50% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .hoverUnderline {
+        display: inline-block;
+        position: relative;
+        color: black;
+    }
+    .hoverUnderline:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .hoverUnderline:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .shake {
+        animation: shake 0.83s infinite;
+      }
+
+      @keyframes shake {
+        0% { transform: translateX(0) }
+        25% { transform: translateY(-9px) }
+        35% { transform: translateY(-9px) rotate(17deg) }
+        55% { transform: translateY(-9px) rotate(-17deg) }
+        65% { transform: translateY(-9px) rotate(17deg) }
+        75% { transform: translateY(-9px) rotate(-17deg) }
+        100% { transform: translateY(0) rotate(0) }
+}
