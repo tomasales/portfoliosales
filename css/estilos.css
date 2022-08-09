@@ -64,6 +64,7 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 5vh 0 5vh 0;
 }
 
 /* Estilos de elementos individuales por id*/
@@ -86,7 +87,7 @@ nav ul li span {
 
 main video {
     border-radius: 12px;
-    max-width: 30% !important;
+    width: 30vw !important;
 }
 
 footer ul {
