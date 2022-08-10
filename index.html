@@ -21,10 +21,11 @@
 <body>
     <header class="container-fluid">
         <div class="backgroundnav row"> 
-                <span class="d-xs-none d-sm-none d-md-inline d-lg-inline logonav col-3 d-flex justify-content-end">
+                <span class="d-flex d-xs-none d-sm-none d-md-inline d-lg-inline logonav col-3 justify-content-end">
                     <a href="./index.html">TOMAS</a>
                 </span>
-                <nav class="col-xs-6 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-xs-center justify-content-sm-center justify-content-md-start justify-content-lg-start">
+            <div class="d-flex col-6 col-md-4 col-lg-3 justify-content-center justify-content-md-start">
+                <nav>
                     <ul class="nav__list">
                         <li>
                             <div class="activenav">
@@ -43,37 +44,40 @@
                         </li>
                     </ul>
                 </nav> 
+            </div>
         </div>    
     </header>        
     <main class="mainIndex">
-        <div class="divtitlemain2 d-flex container-fluid flex-xs-column-reverse flex-sm-column-reverse">
-            <div class="row justify-content-center">
-                <div class="divtitlemain col-lg-5 col-md-5 col-sm-12 col-xs-12"> 
-                    <div class="titlemain row justify-content-baseline">
+        <div class="divtitlemain2 container-fluid">
+            <div class="row justify-content-center flex-column-reverse flex-md-row">
+                <div class="divtitlemain justify-content-center col-lg-5 col-md-5 col-sm-12 col-xs-12"> 
+                    <div class="titlemain row justify-content-md-baseline ">
                         <h1>Hello world</h1><span class="ec ec-wave icontitlemain waving-hand"></span><h1>,</h1>
-                        </span><h1>my name is Tomas.</h1>
+                        </span><h1> my name is Tomas.</h1>
                     </div>
-                <p class="texttitlemain textAlignStart">I’m a graduated Graphic Designer <br> specializing in UX/UI, focused on <br> creating a better world through <br> design, music, and food.</p>
-                <span class="textitlemain" style="margin-top: 10px;">(they all make people smile)</span>
+                        <p class="texttitlemain text-center text-md-left text-lg-left">I’m a graduated Graphic Designer <br> specializing in UX/UI, focused on <br> creating a better world through <br> design, music, and food.</p>
+                        <span class="textitlemain" style="margin-top: 10px;">(they all make people smile)</span>
                 </div>
-                <video src="./assets/video_home.mp4" autoplay loop muted class="col-lg-5 col-md-5 col-sm-12 col-xs-12 justify-content-sm-center justify-content-md-end justify-content-lg-end"> 
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 justify-content-md-end justify-content-lg-end">
+                    <video src="./assets/video_home.mp4" autoplay loop muted >
+                </div>
             </div>    
         </div>
         <div class="section_2_main container">
-            <div class="row">
+            <div class="freeRecipesBlock row justify-content-center align-items-center col-12">
                 <div class="col-12 justify-content-center align-items-center">
                     <div class="section_2_main_1">
                         <span class="ec ec-gift icontitlemain shake"></span><h2>First of all, here is a gift for you</h2><span class="ec ec-gift icontitlemain shake"></span>
                     </div>
-                    <p class="margintop3">
+                    <span class="margintop3">
                         <a href="https://www.notion.so/Recetas-7b5b68b5ef9645239913e2388a3528b7" class="link textAlignCenter" target="_blank">Free recipes by me</a> 
-                    </p>
+                    </span>
                 </div>   
             </div>
         </div>
         <div class="section_3_main container-fluid">
-            <div class="row col-12">
-                <div class="section_3_main_1 col-6 justify-content-end align-items-center">
+            <div class="row col-12 flex-column flex-md-row justify-content-end align-items-center">
+                <div class="section_3_main_1 col-6 align-items-center">
                     <h2>Now you can check my</h2>
                 </div>
                 <div class="section_3_main_2 col-6">
