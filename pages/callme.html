@@ -17,52 +17,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
 </head>
 <body id="grid">
-    <header>
-        <div class="backgroundnav"> 
-            <span class="logonav">
-                <a href="../index.html">TOMAS</a>
-            </span>
-            <nav class="inline">
-                <ul class="nav__list">
-                    <li>
-                        <a href="../index.html">Home</a>   
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projects</a>  
-                    </li>
-                    <li>
-                        <a href="./me.html">Me</a>
-                    </li>
-                    <li>
-                        <div class="activenav">
-                            <a href="./callme.html" class="active">Call me</a>  
-                            <span class="ec ec-point-up-2 emojinav upDown"></span>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>  
-    </header>     
-    <main>
-        <h1>Let's work together</h1>
-        <form data-netlify="true" name="contact" method="get" enctype="text/plain">
-            <select>
-                <option disabled selected>Service</option>
-                <option>UX/UI</option>
-                <option>Consultancy</option>
-            </select>
-        <br>
-        <br>
-            <label for="email1">Email:</label>
-            <input type="email" id="email1">
-        <br>
-        <br>
-            <input type="checkbox" id="checkbox1">
-            <label for="checkbox1">Call me if it is needed.</label>
-        <br>
-        <br>
-            <input type="button" class="button" id="send" value="Send">
-        </form>
+    <header class="container-fluid">
+        <div class="backgroundnav row"> 
+                <span class="d-xs-none d-sm-none d-md-inline d-lg-inline logonav col-3 d-flex justify-content-end">
+                    <a href="./index.html">TOMAS</a>
+                </span>
+                <div class="d-flex col-12 col-md-4 col-lg-3 justify-content-center justify-content-md-start">
+                <nav>
+                    <ul class="nav__list">
+                        <li>
+                             <a href="../index.html">Home</a>   
+                        </li>  
+                        <li>
+                            <a href="./projects.html" >Projects</a>   
+                        </li>
+                        <li>
+                            <a href="./me.html">Me</a>
+                        </li>
+                        <li>
+                            <div class="activenav">
+                                <a href="./callme.html" class="active">Call me</a>
+                                <span class="ec ec-point-up-2 emojinav upDown"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>    
+    </header>          
+    <main class="mainIndexMe"> 
+            <div class="flex-column col-12 col-md-6 blockCallMe justify-content-center align-items-center">
+                <h1>Let's work together</h1>
+                        <form data-netlify="true" name="contact" method="get" enctype="text/plain">
+                            <select>
+                                <option disabled selected>Service</option>
+                                <option>UX/UI</option>
+                                <option>Consultancy</option>
+                            </select>
+                            <label for="email1">Email:</label>
+                            <input type="email" id="email1">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Call me if it is needed.</label>
+                            <input type="button" class="button" id="send" value="Send">
+                        </form>
+                    </div>    
+            </div>    
     </main>
     <footer>
         <div class="titlefooter">

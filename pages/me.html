@@ -17,32 +17,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
 </head>
 <body id="grid">
-    <header>
-        <div class="backgroundnav"> 
-            <span class="logonav">
-                <a href="../index.html">TOMAS</a>
-            </span>
-            <nav class="inline">
-                <ul class="nav__list">
-                    <li>
-                        <a href="../index.html">Home</a>   
-                    </li>
-                    <li>
-                            <a href="./projects.html">Projects</a>  
-                    </li>
-                    <li>
-                        <div class="activenav">
-                            <a href="./me.html" class="active">Me</a>  
-                            <span class="ec ec-point-up-2 emojinav upDown"></span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="./callme.html">Call me</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>  
-    </header>     
+    <header class="container-fluid">
+        <div class="backgroundnav row"> 
+                <span class="d-xs-none d-sm-none d-md-inline d-lg-inline logonav col-3 d-flex justify-content-end">
+                    <a href="./index.html">TOMAS</a>
+                </span>
+                <div class="d-flex col-12 col-md-4 col-lg-3 justify-content-center justify-content-md-start">
+                <nav>
+                    <ul class="nav__list">
+                            <li>
+                                <a href="../index.html">Home</a>   
+                            </li>  
+                        <li>
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <div class="activenav"> 
+                                <a href="./me.html" class="active">Me</a>
+                                <span class="ec ec-point-up-2 emojinav upDown"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./callme.html">Call me</a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>    
+    </header>           
     <main class="mainIndexMe">
         <div class="section1me">
             <div class="divtextme">
