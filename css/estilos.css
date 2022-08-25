@@ -138,15 +138,14 @@ tr th {
 
 main div div p {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
   font-weight: 400;
 }
 
 main div div span {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
 }
 
 /* Estilos de textos y colores */
@@ -158,35 +157,54 @@ main div div span {
   text-align: start !important;
 }
 
-h1 {
+.texto--h1 {
+  color: #FE4A49;
+}
+
+.texto--h2 {
+  color: #FE4A49;
+}
+
+.texto--h3 {
+  color: #FE4A49;
+}
+
+.texto--h4 {
+  color: #FE4A49;
+}
+
+.playfair, .playfair2 {
   font-family: "Playfair Display", serif;
+}
+
+h1 {
   font-weight: 600;
   font-size: 1.75rem;
-  margin: 0px !important;
   color: #212427;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 1.5rem;
+  color: #212427;
 }
 
 h3 {
-  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 1.25rem;
+  color: #212427;
 }
 
 h4 {
-  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 1rem;
+  color: #212427;
 }
 
 p {
-  font-family: "Lato", sans-serif;
   font-weight: 500;
+  font-size: 1rem;
+  color: #212427;
   letter-spacing: 1px;
 }
 
@@ -278,7 +296,6 @@ p {
   display: flex;
   width: 100%;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
   background-color: #FAFAFA;
   padding-top: 25vh;
@@ -288,7 +305,6 @@ p {
 .titlemain {
   display: flex;
   justify-content: baseline;
-  flex-direction: row;
   align-items: center;
   margin-bottom: 16px;
 }
