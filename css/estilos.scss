@@ -42,15 +42,28 @@ body {
 
 header {
     grid-area: header;
-    min-height: 10vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     margin-top: 3vh;
 }
 
+footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: $color3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5vh 0 5vh 0;
+  height: 30vh;
+}
+
 .mainIndex{
     grid-area: main;
-    min-height: 65vh; 
+    min-height: 60vh; 
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -63,7 +76,7 @@ header {
 
 .mainIndexMe {
     grid-area: main;
-    min-height: 65vh;
+    min-height: 60vh;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -72,18 +85,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-footer {
-    grid-area: footer;
-    width: 100%;
-    background-color: $color3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    padding: 5vh 0 5vh 0;
 }
 
 /* Estilos de elementos individuales por id*/
@@ -611,9 +612,10 @@ p {
     margin-bottom: 80px;
     margin-top: 40px;
     margin: auto;
+    align-items: center;
   }
 .containerForm {
-    width: 95%;
+    width: 72%;
     height: 320px;
     background-color: $color2;
     display: flex;

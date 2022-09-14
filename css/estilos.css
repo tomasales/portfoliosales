@@ -30,36 +30,10 @@ body {
 
 header {
   grid-area: header;
-  min-height: 10vh;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   margin-top: 3vh;
-}
-
-.mainIndex {
-  grid-area: main;
-  min-height: 65vh;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainIndexMe {
-  grid-area: main;
-  min-height: 65vh;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
@@ -72,6 +46,33 @@ footer {
   flex-direction: column;
   gap: 20px;
   padding: 5vh 0 5vh 0;
+  height: 30vh;
+}
+
+.mainIndex {
+  grid-area: main;
+  min-height: 60vh;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainIndexMe {
+  grid-area: main;
+  min-height: 60vh;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilos de elementos individuales por id*/
@@ -579,10 +580,11 @@ p {
   margin-bottom: 80px;
   margin-top: 40px;
   margin: auto;
+  align-items: center;
 }
 
 .containerForm {
-  width: 95%;
+  width: 72%;
   height: 320px;
   background-color: #eef2f3;
   display: flex;
