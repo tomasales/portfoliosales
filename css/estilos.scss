@@ -2,8 +2,8 @@
 $playfair: 'Playfair Display', serif;
 $lato: 'Lato', sans-serif;
 $color1: #212427;
-$color2: #eef2f3;
-$color3: #DAE1EA;
+$color2: #F3F3F3;
+$color3: #ECECEC;
 $color4: #1F80E9;
 
 
@@ -31,6 +31,16 @@ $color4: #1F80E9;
 p {
     margin-bottom: 0px !important;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* Estilos de bloques generales, header, main, footer.  */
@@ -86,6 +96,18 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos de elementos individuales por id*/
 
@@ -179,6 +201,19 @@ label {
     color: $color1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos de textos y colores */
 
 .textAlignCenter {
@@ -211,7 +246,7 @@ h3 {
 }
 
 h4 {
-    @include fonts ($playfair, 500, 1rem, $color1)
+    @include fonts ($lato, 500, 1rem, $color1)
 }
 
 p {
@@ -420,6 +455,9 @@ p {
     padding-left: 2vh;
     border-radius: 12px;
     cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
 }
 
 .section_3_main_2_2 {
@@ -432,6 +470,9 @@ p {
     padding-left: 2vh;
     border-radius: 12px;
     cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
 }
 
 .backgroundnav {
@@ -602,7 +643,6 @@ p {
     width: 100%;
   }
 
-// CALL ME
 
 .mainCallMe {
     width: 40%;
@@ -676,19 +716,13 @@ p {
     font-weight: 500;
 }
 
-/*CSGO*/
 
-/*PROJECT*/
 .pProjectText{
     width: 70%;
   }
   .imgProjectMobile{
     display: none;
   }
-  /*PROJECT*/
-  
-  
-  /*CALLME*/
   .titleContact{
       text-align: start;
       width: 100%;
@@ -697,21 +731,38 @@ p {
   
   }
   
-  /*CALLME*/
-  
-  /*ME*/
   .photoMeTablet{
     display: none;
   }
-  /*ME*/
   
   .mainProject{
     width: 930px;
   }
-  /*LOL*/
 
+
+
+
+
+
+
+
+
+  
 
 /* Media queries */
+
+@media only screen and (max-width: 1400px) {
+    
+    .photoMeTablet{
+      display: inline-block;
+      height: 450px;
+      border-radius: 16px;
+    }
+    .photoMe {
+      display: none;
+    }
+
+}
 
     /* Mobile Styles */
     @media only screen and (max-width: 770px) {
@@ -857,15 +908,10 @@ p {
         flex-direction: column;
         }
       
-        /*CALLME*/
-      
       .mainCallMe{
         width: 70%;
       }
       
-        /*CALLME*/
-      
-        /*ME*/
         .photoMeTablet{
           display: inline-block;
           height: 450px;
@@ -876,9 +922,8 @@ p {
           display: none;
         }
       
-        /*Project*/
         .containerProject2{
-            height: 283px;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1069,7 +1114,7 @@ p {
             .containerProject2 {
               width: 100%;
               margin: 0;
-              padding: 16px;
+              padding: 16px 16px 24px 16px;
             }
             .imgProject {
               width: 100%;
@@ -1152,8 +1197,7 @@ p {
             .titleContact{
               margin-bottom: 24px;
             }
-            /*ME*/
-            
+
             .photoMeTablet{
               display: none;
             }
